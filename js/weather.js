@@ -160,6 +160,8 @@
 	}
 
 	$(window).load(function() {
+		moment.locale('pt-BR');
+
 		// Fetch the weather data for right now
 		queryYahoo();
 
@@ -173,7 +175,7 @@
 			$('#time').html(moment().format('HH:mm:ss'));
 		}
 		if ($('#date').length) {
-			$('#date').html(moment().format('dddd, MMMM Do'));
+			$('#date').html(moment().format('dddd, ll'));
 		}
 
 		// Refresh the time and date every second
@@ -182,7 +184,7 @@
 				$('#time').html(moment().format('HH:mm:ss'));
 			}
 			if ($('#date').length) {
-				$('#date').html(moment().format('dddd, MMMM Do'));
+				$('#date').html(moment().format('dddd, ll'));
 			}
 		}, 1000);
 	});
