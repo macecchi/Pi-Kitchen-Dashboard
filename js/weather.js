@@ -170,7 +170,7 @@
 
 		// Set the current time and date on the clock
 		if ($('#time').length) {
-			$('#time').html(moment().format('h:mm:ss a'));
+			$('#time').html(moment().format('HH:mm:ss'));
 		}
 		if ($('#date').length) {
 			$('#date').html(moment().format('dddd, MMMM Do'));
@@ -179,7 +179,7 @@
 		// Refresh the time and date every second
 		setInterval(function(){
 			if ($('#time').length) {
-				$('#time').html(moment().format('h:mm:ss a'));
+				$('#time').html(moment().format('HH:mm:ss'));
 			}
 			if ($('#date').length) {
 				$('#date').html(moment().format('dddd, MMMM Do'));
