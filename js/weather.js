@@ -9,7 +9,7 @@
 
 	// Your Yahoo WOEID code
 	// Find your WOEID code at http://zourbuth.com/tools/woeid/
-	var woeid = 23416998;
+	var woeid = 455825;
 	
 	// Your temperature unit measurement
 	// This bit is simple, 'c' for Celcius, and 'f' for Fahrenheit
@@ -17,7 +17,7 @@
 
 	// Yahoo! query interval (milliseconds)
 	// Default is every 15 minutes. Be reasonable. Don't query Yahoo every 500ms.
-	var waitBetweenWeatherQueriesMS = 900000;
+	var waitBetweenWeatherQueriesMS = 600000;
 
 	// You're done!
 	/*********************************/
