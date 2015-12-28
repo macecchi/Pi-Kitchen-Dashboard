@@ -75,25 +75,25 @@ height: 100px;
 }
 
 .day {
-font-size: 3.5vmin;
-margin-bottom: 1.5vmin;
+font-size: 5vmin;
+margin-bottom: 0vmin;
 }
 .desc {
 font-size: 3.5vmin;
- margin-top: 2.5vmin;
+ margin-top: 2vmin;
 margin-bottom: 0.5vmin;
 }
 .highTemp {
-font-size: 3vmin;
+font-size: 5vmin;
 }
 .lowTemp {
-font-size: 3vmin;
+font-size: 5vmin;
 }
 .currentTemp {
  font-size: 3.5vmin;
 }
 .temp {
- font-size: 15vmin;
+ font-size: 20vmin;
 }
 #currentlyHeading {
 font-size: 5vmin;
@@ -107,10 +107,10 @@ font-size: 2.5vmin;
 }
 
 #time {
-font-size: 15vmin;
+font-size: 25vmin;
 }
 #date {
-font-size: 5vmin;
+font-size: 10vmin;
 color: #CCCCCC;
 }
 

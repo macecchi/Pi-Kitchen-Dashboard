@@ -46,7 +46,6 @@
 		var forecastCell = '#forecast' + day + ' ';
 		var day = $(forecastCell + '.day');
 		var icon = $(forecastCell + '.icon');
-		var desc = $(forecastCell + '.desc');
 		var high = $(forecastCell + '.high');
 		var low = $(forecastCell + '.low');
 
@@ -62,9 +61,6 @@
 		// Insert the forecast details. Icons may be changed by editing the icons array.
 		if (icon.length) {
 			icon.html(icons[forecast.code]);
-		}
-		if (desc.length) {
-			desc.html(forecast.text);
 		}
 		if (high.length) {
 			high.html(forecast.high + '°' + unit.toUpperCase());
@@ -175,7 +171,7 @@
 			$('#time').html(moment().format('HH:mm:ss'));
 		}
 		if ($('#date').length) {
-			$('#date').html(moment().format('dddd, ll'));
+			$('#date').html(moment().format('dddd<br>ll'));
 		}
 
 		// Refresh the time and date every second
@@ -184,7 +180,7 @@
 				$('#time').html(moment().format('HH:mm:ss'));
 			}
 			if ($('#date').length) {
-				$('#date').html(moment().format('dddd, ll'));
+				$('#date').html(moment().format('dddd<br>ll'));
 			}
 		}, 1000);
 	});
