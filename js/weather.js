@@ -37,7 +37,7 @@
 			desc.html(currently.text);
 		}
 		if (temp.length) {
-			temp.html(currently.temp);
+			temp.html(currently.temp + '°' + unit.toUpperCase());
 		}
 	}
 
@@ -67,10 +67,10 @@
 			desc.html(forecast.text);
 		}
 		if (high.length) {
-			high.html(forecast.high);
+			high.html(forecast.high + '°' + unit.toUpperCase());
 		}
 		if (low.length) {
-			low.html(forecast.low);
+			low.html(forecast.low + '°' + unit.toUpperCase());
 		}
 	}
 
